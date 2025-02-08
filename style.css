@@ -8,6 +8,7 @@ body {
     color: #333;
     text-align: right;
 }
+
 header {
     background-color: #4CAF50;
     color: white;
@@ -26,7 +27,8 @@ header > h1 {
     font-weight: bold;
 }
 .container {
-    width: 60%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -34,10 +36,11 @@ header > h1 {
 h1, h2 {
     color: #4CAF50;
 }
+
 .step {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 2rem;
     padding: 1rem;
     background: #fff;
@@ -45,71 +48,46 @@ h1, h2 {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .step img {
-    max-width: 45%;
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
-    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
-.step-content {
-    max-width: 50%;
-}
+
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #4CAF50;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-.section h2 {
-    display: flex;
-    align-items: center;
-}
-.section h2 span.number {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 5px;
-    border-radius: 50%;
-    margin-left: 10px;
-    font-size: 1em;
-    font-weight: bold;
+    margin-top: 2rem;
 }
 
-.back-to-top {
-    text-align: center;
-    margin-top: 20px;
+#backToTop {
     position: fixed;
     top: 20px;
-    left: 20px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
     display: none;
-}
-.back-to-top a {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.quiz_image{
-    height:300px;
-    width:100%;
-    align-items: center;
-}
-.calculate_score{
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
+    font-size: 1rem;
 }
 
+/* התאמות למסכים קטנים */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+    .step img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
