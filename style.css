@@ -24,15 +24,16 @@ header > h1 {
     margin: 0 auto;
     padding: 1rem;
 }
-
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 h1, h2 {
     color: #4CAF50;
 }
 
-.center_image{
-    display: block;
-    margin: 0 auto;
-}
 .step {
     display: flex;
     flex-direction: column;
@@ -73,7 +74,14 @@ footer {
     display: none;
     font-size: 1rem;
 }
+.calculate_score{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
 
+}
 /* התאמות למסכים קטנים */
 @media (max-width: 768px) {
     .container {
