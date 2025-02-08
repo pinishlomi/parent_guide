@@ -18,14 +18,6 @@ header {
 header > h1 {
     color: white;
 }
-.title2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.title3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
 .container {
     width: 80%;
     max-width: 1200px;
@@ -37,6 +29,10 @@ h1, h2 {
     color: #4CAF50;
 }
 
+.center_image{
+    display: block;
+    margin: 0 auto;
+}
 .step {
     display: flex;
     flex-direction: column;
@@ -50,7 +46,8 @@ h1, h2 {
 }
 
 .step img {
-    max-width: 100%;
+    max-width: 600px;
+    max-height: 400px;
     height: auto;
     border-radius: 5px;
     margin-bottom: 1rem;
